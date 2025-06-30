@@ -1,0 +1,44 @@
+SELECT * FROM public.clienti
+ORDER BY numerocliente ASC ;
+
+--SELECT * FROM public.clienti WHERE nome = 'Mario';
+--SELECT * FROM public.clienti where annodinascita = '1982'
+
+
+SELECT * FROM public.fornitori
+ORDER BY numerofornitore ASC ;
+
+
+SELECT * FROM public.fatture
+ORDER BY numerofattura ASC ;
+
+--SELECT * FROM public.fatture WHERE iva = '20';
+--SELECT c.nome, c.cognome, c.annodinascita, c.regioneresidenza, f.numerofattura, f.tipologia, f.importo, f.iva, f.datafattura, f.numerofornitore
+--FROM clienti c 
+--JOIN fatture f ON f.idcliente = c.numerocliente
+--WHERE f.importo < 1000;
+
+--SELECT r.denominazione, f.numerofattura, f.tipologia, f.importo, f.iva, f.datafattura
+--FROM fornitori r
+--JOIN fatture f ON f.numerofornitore=r.numerofornitore;
+
+--SELECT EXTRACT(YEAR FROM datafattura) AS anno,
+--       COUNT(*) AS numero_fatture
+--FROM public.fatture
+--WHERE iva = 20
+--GROUP BY anno
+--ORDER BY anno;
+
+--SELECT EXTRACT(YEAR FROM datafattura) AS anno,
+--      COUNT(*) AS numerofatture,
+--       SUM(importo) AS totaleimporti
+--FROM public.fatture
+--GROUP BY anno
+--ORDER BY anno;
+
+
+SELECT * FROM public.prodotti
+ORDER BY idprodotto ASC ;
+
+--SELECT *, EXTRACT(YEAR FROM dataattivazione)='2017' FROM public.prodotti WHERE incommercio = true;
+
