@@ -40,5 +40,5 @@ ORDER BY numerofattura ASC ;
 SELECT * FROM public.prodotti
 ORDER BY idprodotto ASC ;
 
---SELECT *, EXTRACT(YEAR FROM dataattivazione)='2017' FROM public.prodotti WHERE incommercio = true;
+--SELECT *, EXTRACT(YEAR FROM dataattivazione)='2017' FROM public.prodotti WHERE incommercio = true AND inproduzione= true;
 
